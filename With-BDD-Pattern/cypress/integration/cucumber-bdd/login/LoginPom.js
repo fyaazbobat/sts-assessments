@@ -15,7 +15,7 @@ class LoginPom {
     }
 
     static typeRegisterEmail() {
-        cy.get('#email_create').type('test0.@fyaaz.com')
+        cy.get('#email_create').type('ststest0.@fyaaz.com')
     }
 
     static selectSubmit() {
@@ -32,7 +32,7 @@ class LoginPom {
         //https://stackoverflow.com/questions/63150659/how-to-run-a-test-multiple-times-with-different-sets-of-data-in-cypress
        const testData = [
             {
-                //email: 'testfyaaz00.5@text.com',
+                //email: 'testfyaaz.@text.com',
                 fname: 'testf',
                 lname: 'testf',
                 //password: 'password',
@@ -78,13 +78,13 @@ class LoginPom {
     }
 
     static formForSecondAccount() {
-        cy.get('#email_create').type('test1.@fyaaz.com')
+        cy.get('#email_create').type('ststest1.@fyaaz.com')
         cy.get('#SubmitCreate > span').click()
         this.fillRegisterationForm()
     }
     
     static formForThirdAccount() {
-        cy.get('#email_create').type('test3.@fyaaz.com')
+        cy.get('#email_create').type('ststest3.@fyaaz.com')
         cy.get('#SubmitCreate > span').click()
         this.fillRegisterationForm()
     }
@@ -92,7 +92,7 @@ class LoginPom {
     static logIntoThirdAccount() {
         this.loadSignInPage()
         cy.contains('Authentication').should('be.visible')
-        cy.get('#email').type('test3.@fyaaz.com')
+        cy.get('#email').type('ststest3.@fyaaz.com')
         cy.get('#passwd').type('password')
         cy.get('#SubmitLogin > span').click()
     }
@@ -128,7 +128,7 @@ class LoginPom {
     static validateInfo() {
         cy.get('#firstname').should('have.value', 'testf')
         cy.get('#lastname').should('have.value', 'testf')
-        cy.get('#email').should('have.value', 'test3.@fyaaz.com')
+        cy.get('#email').should('have.value', 'ststest3.@fyaaz.com')
     }
 }
 
