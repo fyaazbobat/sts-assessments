@@ -1,0 +1,293 @@
+[
+  {
+    "description": "    Performing automation task on practice site",
+    "keyword": "Feature",
+    "name": "Testing automation practice site",
+    "line": 1,
+    "id": "testing-automation-practice-site",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "testing-automation-practice-site;visit-test-site-&-go-to-register-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Visit Test Site & go to Register Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I land on the test website",
+            "result": {
+              "status": "passed",
+              "duration": 2498000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on the Login button",
+            "result": {
+              "status": "passed",
+              "duration": 1422000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the text on login page is 'Authentication'",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-automation-practice-site;enter-registration-page",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Enter registration page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I type a email in the email field",
+            "result": {
+              "status": "passed",
+              "duration": 429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I click on Submit button",
+            "result": {
+              "status": "passed",
+              "duration": 4132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I can see the page sub heading",
+            "result": {
+              "status": "passed",
+              "duration": 2026000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-automation-practice-site;fill-registration-form-for-1st-accounts-using-a-loop",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Fill registration form for 1st accounts using a loop",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill in the fields for registration and press submit button for 1st account",
+            "result": {
+              "status": "passed",
+              "duration": 8752000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see text indicating account login for 1st account",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I should click on the logout button for 1st account",
+            "result": {
+              "status": "passed",
+              "duration": 1718000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-automation-practice-site;fill-registration-form-for-2nd-accounts-using-a-loop",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Fill registration form for 2nd accounts using a loop",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I fill in the fields for registration and press submit button for 2nd account",
+            "result": {
+              "status": "passed",
+              "duration": 10826000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see text indicating account login for 2nd account",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I should click on the logout button for 2nd account",
+            "result": {
+              "status": "passed",
+              "duration": 3006000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-automation-practice-site;fill-registration-form-for-3rd-accounts-using-a-loop",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Fill registration form for 3rd accounts using a loop",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I fill in the fields for registration and press submit button for 3rd account",
+            "result": {
+              "status": "passed",
+              "duration": 11031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see text indicating account login for 3rd account",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I should click on the logout button for 3rd account",
+            "result": {
+              "status": "passed",
+              "duration": 6568000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-automation-practice-site;with-a-user-created,-add-a-product-and-checkout",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "With a user created, add a product and checkout",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I login to my 3rd account",
+            "result": {
+              "status": "passed",
+              "duration": 3850000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I search a product in the search box",
+            "result": {
+              "status": "passed",
+              "duration": 1643000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I can see the available now title visible",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I should be able to add to cart and checkout",
+            "result": {
+              "status": "passed",
+              "duration": 13651000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-automation-practice-site;validate-user-information-from-setting-to-code",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Validate user information from setting to code",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I Login and go to settings page",
+            "result": {
+              "status": "passed",
+              "duration": 9554000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I should validate first, last name and email",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
