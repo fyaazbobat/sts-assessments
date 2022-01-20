@@ -15,7 +15,7 @@ const testData = [
         state: 'Alabama',
         dobDay: 9,
         dobMonth: 'September',
-        dobYear: '1999'
+        dobYear: '1999',
         
     },
     
@@ -30,7 +30,7 @@ it("Visit Test Site & go to Register PAge", () => {
 
 testData.forEach((credentials) => {
     it('Create First User', () => {
-        cy.get('#email_create').type('test.0000.00@test.com')
+        cy.get('#email_create').type('oldfyaaz1@test.com')
         cy.get('#SubmitCreate > span').click()
         cy.get('.page-heading').should(
             "have.text", "Create an account"
@@ -55,7 +55,7 @@ testData.forEach((credentials) => {
     })
 
     it('Create Second User', () => {
-        cy.get('#email_create').type('test.000010@test.com')
+        cy.get('#email_create').type('oldfyaaz1@test.com')
         cy.get('#SubmitCreate > span').click()
         cy.get('.page-heading').should(
             "have.text", "Create an account"
@@ -80,7 +80,7 @@ testData.forEach((credentials) => {
     })
     
     it('Create Second User', () => {
-        cy.get('#email_create').type('test.000050@test.com')
+        cy.get('#email_create').type('oldfyaaz2@test.com')
         cy.get('#SubmitCreate > span').click()
         cy.get('.page-heading').should(
             "have.text", "Create an account"
@@ -106,11 +106,11 @@ testData.forEach((credentials) => {
 });
 
 
-it("Use the first created user to add a product and checkout", () => {
+it.only("Use the first created user to add a product and checkout", () => {
     cy.visit('http://automationpractice.com/index.php')
     cy.get('.login').click()
     cy.contains('Authentication').should('be.visible')
-    cy.get('#email').type('test.0000.00@test.com')
+    cy.get('#email').type('oldtest3@fyaaz.com')
     cy.get('#passwd').type('password')
     cy.get('#SubmitLogin > span').click()
     cy.get('li > .btn > span').click()
@@ -135,12 +135,12 @@ it("Validate user information from setting to code", () =>{
     cy.visit('http://automationpractice.com/index.php')
     cy.get('.login').click()
     cy.contains('Authentication').should('be.visible')
-    cy.get('#email').type('test.0000.0@test.com')
+    cy.get('#email').type('oldtest3@fyaaz.com')
     cy.get('#passwd').type('password')
     cy.get('#SubmitLogin > span').click()
     cy.get('.account > span').click().should('be.visible')
     cy.get('.myaccount-link-list > :nth-child(4)').click()
     cy.get('#firstname').should('have.value', 'Testf')
     cy.get('#lastname').should('have.value', 'testf')
-    cy.get('#email').should('have.value', 'test.0000.0@test.com')
+    cy.get('#email').should('have.value', 'oldtest3@fyaaz.com')
 })
